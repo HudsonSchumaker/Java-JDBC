@@ -34,7 +34,7 @@ public class ContaDAO {
     public void altera(Conta conta) {
         try {
             PreparedStatement ps = this.connection
-                    .prepareStatement("UPDATE Conta set titular=?, banco=?, agencia=?, numero=? where id=?");
+                    .prepareStatement("UPDATE Conta SET titular=?, banco=?, agencia=?, numero=? where id=?");
             ps.setString(1, conta.getTitular());
             ps.setString(2, conta.getBanco());
             ps.setString(3, conta.getAgencia());
