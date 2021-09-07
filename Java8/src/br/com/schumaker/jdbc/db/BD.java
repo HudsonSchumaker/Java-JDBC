@@ -20,7 +20,7 @@ public class BD {
             Statement statement = this.connection.createStatement();
             statement.execute(schema);
         } catch (SQLException e) {
-            // ignora se a tabela já existe 
+            // ignora se a tabela já existe
         }
     }
 }
