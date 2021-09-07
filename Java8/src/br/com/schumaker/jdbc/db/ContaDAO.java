@@ -50,7 +50,7 @@ public class ContaDAO {
     public void remove(Conta conta) {
         try {
             PreparedStatement ps = this.connection
-                    .prepareStatement("delete from Conta where id=?");
+                    .prepareStatement("DELETE from Conta where id=?");
             ps.setInt(1, conta.getId());
             ps.execute();
             ps.close();
