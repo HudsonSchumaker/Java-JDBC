@@ -19,7 +19,7 @@ public class ContaDAO {
     public void adiciona(Conta conta) {
         try {
             PreparedStatement ps = this.connection
-                    .prepareStatement("INSERT into Conta (titular, banco, agencia, numero) values (?,?,?,?)");
+                    .prepareStatement("INSERT INTO Conta (titular, banco, agencia, numero) values (?,?,?,?)");
             ps.setString(1, conta.getTitular());
             ps.setString(2, conta.getBanco());
             ps.setString(3, conta.getAgencia());
