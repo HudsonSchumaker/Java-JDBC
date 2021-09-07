@@ -20,7 +20,7 @@ public class ConnectionFactory {
             Class.forName("org.hsqldb.jdbcDriver");
             return DriverManager.getConnection("jdbc:hsqldb:contas", "sa", "");
         } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e); 
+            throw new RuntimeException(e);
         }
     }
 }
