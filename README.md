@@ -1,2 +1,2 @@
-# JavaJDBC
+# Java-JDBC
 JDBC
